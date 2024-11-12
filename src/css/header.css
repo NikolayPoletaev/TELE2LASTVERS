@@ -1,0 +1,35 @@
+header {
+    min-height: 78px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-logo {
+    position: absolute;
+    top: 21px;
+    left: 32px;
+}
+
+.location {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    right: 28px;
+    cursor: pointer;
+}
+
+.location:hover {
+    color: var(--hover-color);
+}
+
+.location:active {
+    color: var(--main-blue-color);
+}
+
+.location img {
+    margin-right: 8px;
+}
+
+.location__city {
+    color: inherit;
+}

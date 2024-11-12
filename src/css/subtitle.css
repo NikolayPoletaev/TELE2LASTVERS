@@ -1,0 +1,22 @@
+.subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(18px, 1.5vw, 20px);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.subtitle_16px {
+    font-size: 16px;
+    line-height: 138%;
+}
+
+.subtitle_14px {
+    font-size: 14px;
+    line-height: 138%;
+}
+
+.subtitle_13px {
+    font-size: 13px;
+    line-height: 18px;
+}

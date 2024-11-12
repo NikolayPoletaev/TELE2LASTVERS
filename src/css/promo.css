@@ -1,0 +1,46 @@
+.container {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.promo {
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo__block {
+    padding-top: 27px;
+    padding-bottom: 110px;
+}
+
+.promo__block-title {
+    margin-top: 48px;
+    font-family: "Tele2", "sans-serif";
+    font-size: clamp(46px, 4.5vw, 68px);
+    font-weight: 700;
+    line-height: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+.promo__block-title_blue {
+    color: var(--main-blue-color);
+}
+
+.promo__block-subtitle {
+    margin-top: 24px;
+}
+
+.promo__block-action {
+    margin-top: 56px;
+}
+
+.promo__image {
+    width: 584px;
+}
+
+.promo__image img {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.title {
+    color: white;
+    font-family: "Tele2", "serif";
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 130%;
+    text-align: left;
+}
+
+.title_blue {
+    color: var(--main-blue-color);
+}
+
+.title_hidden {
+    display: none;
+}

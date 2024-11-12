@@ -1,0 +1,146 @@
+.guide {
+    margin-top: 148px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide__form {
+    max-width: 348px;
+}
+
+.guide__form-number {
+    margin-top: 64px;
+    border-bottom: 2px solid rgb(143, 147, 153);
+    padding-bottom: 5px;
+}
+
+.guide__form-number label {
+    display: block;
+    color: rgb(143, 147, 153);
+    font-family:  "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.guide__form-number input {
+    width: 100%;
+    margin-top: 3px;
+    background: transparent;
+    border: none;
+}
+
+.guide__form-number input:focus {
+    outline: none;
+}
+
+.guide__form-number input:hover {
+    outline: 1px solid white;
+    border-radius: 5px;
+}
+
+.guide__form-personal {
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.guide__form-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.guide__form-personal label {
+    position: relative;
+    user-select: none;
+}
+
+.guide__form-personal label::before {
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.guide__form-checkbox:checked+label::before {
+    background-image: url("../images/Checked.png");
+}
+
+.guide__form-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+
+.guide__form-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+.guide__form-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.guide__form-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+
+.guide__form-action {
+    margin-top: 32px;
+}
+
+.guide__form-feedback {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin-top: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(38, 43, 54);
+}
+
+.guide__form-feedback_hidden {
+    display: none;
+}
+
+.guide__form-feedback img {
+    display: block;
+    margin-right: 14px;
+}
+
+.guide__list {
+    width: 598px;
+}
+
+.guide__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.guide__list-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(57, 64, 76);
+    border-radius: 100%;
+
+    color: var(--main-blue-color);
+    font-family: "Tele2 DisplaySerif Web SHORT", "serif";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.guide__list-text {
+    max-width: 494px;
+}

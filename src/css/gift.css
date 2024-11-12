@@ -1,0 +1,23 @@
+.gift {
+    margin-top: 148px;
+}
+
+.gift__subtitle {
+    margin-top: 24px;
+}
+
+.gift__benefit {
+    margin-top: 56px;
+    display: flex;
+}
+
+.gift__benefit-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.gift__benefit-block img {
+    margin-right: 16px;
+}

@@ -1,0 +1,87 @@
+.modal {
+    position: fixed;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    top: 78px;
+    left: 0;
+    right: 0;
+    background-color: var(--main-bg-color);
+    padding: 142px 0px 0px 162px;
+    border: none;
+    opacity: 0;
+}
+
+.modal[open] {
+    animation: modal-in 500ms forwards ease;
+}
+
+.modal[open]::backdrop {
+    background: transparent;
+}
+
+@keyframes modal-in{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.location-modal__list {
+    display: grid;
+    margin-top: 64px;
+
+    grid-template-rows: auto auto auto auto;
+    grid-auto-flow: column;
+
+    grid-auto-columns: 160px;
+    row-gap: 24px;
+    column-gap: 88px;
+}
+
+.location-modal__item {
+    cursor: pointer;
+}
+
+.form-modal {
+    display: flex;
+    pointer-events: none;
+    background-color: var(--main-bg-color);
+    border: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.form-modal[open] {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.form-modal .instructions__form-number {
+    margin-top: 0px;
+}
+
+.form-modal .instructions__form {
+    max-width: 100%;
+}
+
+.form-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.405);
+}
+
+.form-modal .instructions__form-action {
+    text-align: left;
+}
+
+img.hidden {
+    display: none;
+}
