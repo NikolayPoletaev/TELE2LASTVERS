@@ -2,10 +2,10 @@ import { formFeedbackFunc } from './form-feedback-func.js'
 
 const formDialog = document.querySelector(".form-modal");
 const formButtonOpen = document.querySelector(".promo__block-action .btn");
-const formButtonSubmit = document.querySelector(".form-modal .instructions__form-action .btn");
+const formButtonSubmit = document.querySelector(".form-modal .guide__form-action .btn");
 const formTelInput = document.querySelector(".form-modal input[type='tel']")
-const formFeedback = document.querySelector(".form-modal .instructions__form-feedback");
-const formCheckbox = formDialog.querySelector(".instructions__form-checkbox");
+const formFeedback = document.querySelector(".form-modal .guide__form-feedback");
+const formCheckbox = formDialog.querySelector(".guide__form-checkbox");
 
 formButtonOpen.addEventListener("click", () => {
     formDialog.showModal();
@@ -24,7 +24,7 @@ formButtonSubmit.addEventListener("click", (e) => {
             formDialog.querySelector("form").reset();
             formDialog.close();
             document.body.classList.remove("scroll-lock");
-            formFeedback.classList.add("instructions__form-feedback_hidden");
+            formFeedback.classList.add("guide__form-feedback_hidden");
         }, 1000);
     }
 
